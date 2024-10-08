@@ -21,7 +21,8 @@
 }
 
 .container {
-    max-width: 70%;
+    width: 1100px;
+    max-width: 100%;
     margin: auto;
 }
 
@@ -31,14 +32,13 @@ ul {
 
 a {
     text-decoration: none;
+    padding-right: 10px;
+    color: white;
 }
 
-.text-small {
-    font-size: small;
-}
-
-.text-strong {
-    font-weight: 200;
+h5 {
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 
 .text-red {
@@ -58,6 +58,7 @@ a {
 .padding2 {
     padding-bottom: 100px;
 }
+
 /*Utility Flex*/
 
 .d-flex {
@@ -158,4 +159,11 @@ main {
 /*footer*/
 footer {
     background-color: var(--dark);
+    height: 80px;
+    color: white;
+}
+
+footer div div h4 {
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
