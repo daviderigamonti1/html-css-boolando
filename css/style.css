@@ -33,6 +33,31 @@ a {
     text-decoration: none;
 }
 
+.text-small {
+    font-size: small;
+}
+
+.text-strong {
+    font-weight: 200;
+}
+
+.text-red {
+    color: var(--red);
+    font-weight: 1000;
+}
+
+.text-deleted {
+    text-decoration: line-through;
+}
+
+.padding1 {
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.padding2 {
+    padding-bottom: 100px;
+}
 /*Utility Flex*/
 
 .d-flex {
@@ -47,6 +72,10 @@ a {
     flex-direction: row;
 }
 
+.wrap {
+    flex-wrap: wrap;
+}
+
 .align-center {
     align-items: center;
 }
@@ -54,7 +83,7 @@ a {
 /*header*/
 header {
     background-color: var(--orange);
-    height: 50px;
+    line-height: 50px;
 }
 /*main*/
 main {
@@ -63,11 +92,69 @@ main {
 
 .col {
     width: calc((100% - 20px)/ 3);
+    position: relative;
 }
 
+.col img {
+    width: 100%;
+    display: block;
+}
 .gap {
     gap: 10px;
 }
+
+.badge-red {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    font-size: xx-small;
+    color: white;
+    width: 25px;
+    line-height: 15px;
+    text-align: center;
+    background-color: var(--red);
+}
+
+.badge-green {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    font-size: xx-small;
+    color: white;
+    width: 50px;
+    line-height: 15px;
+    text-align: center;
+    background-color: var(--green);
+}
+
+.badge-heart {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 25px;
+    line-height: 25px;
+    text-align: center;
+    background-color: white;
+}
+
+#badge-g {
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+    font-size: xx-small;
+    color: white;
+    width: 50px;
+    line-height: 15px;
+    text-align: center;
+    background-color: var(--green);
+}
+
+.content {
+    position: absolute;
+    top: 500px;
+    left: 0px;
+}
+
 /*footer*/
 footer {
     background-color: var(--dark);
