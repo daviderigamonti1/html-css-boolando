@@ -1,0 +1,74 @@
+/*Generals*/
+/*Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Custom properties*/
+
+:root {
+    --orange: rgb(255, 105, 0);
+    --light: rgb(232, 232, 230);
+    --dark: rgb(26, 26, 26);
+    --red: rgb(255, 0, 0);
+    --green: rgb(0, 128, 0);
+}
+
+.debug {
+    border: 1px solid red;
+}
+
+.container {
+    max-width: 70%;
+    margin: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*Utility Flex*/
+
+.d-flex {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.align-center {
+    align-items: center;
+}
+
+/*header*/
+header {
+    background-color: var(--orange);
+    height: 50px;
+}
+/*main*/
+main {
+    max-width: 100%;
+}
+
+.col {
+    width: calc((100% - 20px)/ 3);
+}
+
+.gap {
+    gap: 10px;
+}
+/*footer*/
+footer {
+    background-color: var(--dark);
+}
